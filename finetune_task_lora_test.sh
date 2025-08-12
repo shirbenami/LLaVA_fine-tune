@@ -39,8 +39,8 @@ python llava/train/train.py \
   --mm_projector_lr 1e-5 \
   \
   --num_train_epochs 2 \
-  --per_device_train_batch_size 4 \
-  --per_device_eval_batch_size 4 \
+  --per_device_train_batch_size 1 \
+  --per_device_eval_batch_size 1 \
   --gradient_accumulation_steps 8 \
   \
   --learning_rate 1e-5 \
@@ -55,4 +55,5 @@ python llava/train/train.py \
   --save_steps 50 \
   --save_total_limit 3 \
   --logging_steps 1 \
-  --report_to none
+  --report_to none 
+
